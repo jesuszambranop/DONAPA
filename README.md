@@ -5,23 +5,23 @@ Sitio de Rodrigo Aparicio y del Plan Social Familiar Somos Durandueños, Durán 
 ## Ejecutar localmente
 
 ```sh
-python3 -m http.server 8080 --directory docs
+python3 -m http.server 8080 --directory .
 ```
 
 Abrir `http://localhost:8080`. HTML, CSS y JavaScript nativos, sin instalación ni compilación.
 
 ## GitHub Pages
 
-El sitio se publica desde la carpeta `/docs` de la rama `main`. Todos los enlaces a recursos son relativos para funcionar bajo `/DONAPA/`. El archivo `.nojekyll` permite servir los archivos estáticos directamente.
+El sitio se publica desde la raíz `/` de la rama `main`. Todos los enlaces a recursos son relativos para funcionar bajo `/DONAPA/`. El archivo `.nojekyll` permite servir los archivos estáticos directamente.
 
-En **Settings → Pages**, seleccionar **Deploy from a branch**, rama **main**, carpeta **/docs**.
+En **Settings → Pages**, seleccionar **Deploy from a branch**, rama **main**, carpeta **/ (root)**.
 
 ## Archivos
 
-- `docs/index.html`: contenido y siete programas, carnet ilustrativo y formulario.
-- `docs/styles.css`: diseño adaptable, accesibilidad y animaciones.
-- `docs/app.js`: menú móvil y descarga de la ficha familiar.
-- `docs/assets/`: retrato del documento aportado, marcas SVG, iconos vectoriales, fuentes y propuesta original en PDF.
+- `index.html`: contenido y siete programas, carnet ilustrativo y formulario.
+- `styles.css`: diseño adaptable, accesibilidad y animaciones.
+- `app.js`: menú móvil y descarga de la ficha familiar.
+- `assets/`: retrato del documento aportado, marcas SVG, iconos vectoriales, fuentes y propuesta original en PDF.
 
 Montserrat se distribuye localmente con licencia OFL. Los encabezados usan Gotham Black si está instalada y Montserrat 900 como alternativa. Para distribuir Gotham como fuente web se necesita aportar un archivo WOFF2 con licencia.
 
