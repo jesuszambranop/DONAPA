@@ -1,0 +1,201 @@
+[
+  {
+    "id": "a",
+    "code": "A",
+    "category": "Alimentación",
+    "title": "Canasta “Durandueña”",
+    "photo": "alimentacion",
+    "alt": "Frutas y verduras en los estantes de un mercado",
+    "summary": "Una canasta de víveres cada mes para acompañar a los hogares que más lo necesitan.",
+    "number": "10.000",
+    "unit": "hogares como meta",
+    "page": 6,
+    "intro": "Que lo esencial llegue a casa.",
+    "paragraphs": [
+      "La Canasta “Durandueña” es la propuesta de asistencia alimentaria del Plan Social Familiar. Está dirigida a 10.000 hogares vulnerables del cantón y contempla la entrega de canastas de víveres mensuales durante la administración municipal de Rodrigo Aparicio.",
+      "La alimentación forma parte de las necesidades cotidianas de una familia. Por eso, esta iniciativa se plantea como un apoyo periódico a los hogares, dentro de un plan que también reúne salud, educación y oportunidades de emprendimiento. La cobertura propuesta busca que este apoyo llegue de forma periódica a las familias que más lo necesitan."
+    ],
+    "heading": "Qué contempla",
+    "items": [
+      "Canastas de víveres con una frecuencia mensual.",
+      "Asistencia alimentaria dirigida a hogares en situación de vulnerabilidad.",
+      "Una meta de cobertura de 10.000 hogares del cantón.",
+      "Continuidad durante la administración municipal propuesta."
+    ],
+    "audience": "Hogares vulnerables de Durán, mediante el proceso de inscripción y calificación familiar del plan.",
+    "context": "El programa se integraría al sistema municipal único de inscripción y seguimiento. Su institucionalización contempla presupuesto, cobertura, requisitos públicos y mecanismos de evaluación."
+  },
+  {
+    "id": "b",
+    "code": "B",
+    "category": "Emprendimiento",
+    "title": "Escuela de Emprendimiento",
+    "photo": "emprendimiento",
+    "alt": "Tres personas conversan y trabajan con computadoras en una mesa",
+    "summary": "Aprender, formalizar y hacer crecer una idea con capacitación gratuita y acompañamiento productivo.",
+    "number": "2.500",
+    "unit": "personas por año",
+    "page": 6,
+    "intro": "Herramientas para dar el siguiente paso.",
+    "paragraphs": [
+      "La Escuela de Emprendimiento propone capacitar gratuitamente a 2.500 personas al año. La formación reúne herramientas de gestión, conocimientos digitales y oficios para apoyar a quienes buscan desarrollar una actividad productiva.",
+      "El programa incluye administración, ventas, marketing digital, inteligencia artificial, costos y formalización de negocios. A estos contenidos se suma el acompañamiento productivo. La formación y el apoyo al desarrollo del emprendimiento se plantean como partes de una misma iniciativa."
+    ],
+    "heading": "Las áreas de capacitación",
+    "items": [
+      "Administración y costos para la gestión del negocio.",
+      "Ventas y marketing digital.",
+      "Inteligencia artificial aplicada al aprendizaje y la actividad productiva.",
+      "Oficios y formalización de negocios.",
+      "Acompañamiento productivo."
+    ],
+    "audience": "Personas que buscan formación para emprender o fortalecer su actividad productiva en Durán. La meta anual propuesta es de 2.500 participantes.",
+    "context": "La capacitación se plantea como un programa institucional gratuito. La cobertura, los requisitos públicos y la evaluación formarían parte de su implementación dentro del plan social."
+  },
+  {
+    "id": "c",
+    "code": "C",
+    "category": "Bienestar animal",
+    "title": "Clínica Veterinaria Municipal",
+    "photo": "mascotas",
+    "alt": "Dos perros corren juntos al aire libre",
+    "summary": "Las mascotas también son familia: atención básica, prevención y cuidado responsable.",
+    "number": "Cuidarlos",
+    "unit": "también es cuidar a la familia",
+    "page": 7,
+    "intro": "Una familia incluye a sus mascotas.",
+    "paragraphs": [
+      "La propuesta de Clínica Veterinaria Municipal incorpora a las mascotas a los beneficios del carnet familiar. El plan contempla consultas básicas, esterilización, vacunación y desparasitación como parte de la atención veterinaria.",
+      "El alcance también incluye a los animales rescatados y las campañas de tenencia responsable. De esta manera, el programa reúne atención a las mascotas de las familias afiliadas, acciones preventivas y cuidado de animales que han sido rescatados. Cuidar a los animales y promover una convivencia responsable forman parte de este compromiso."
+    ],
+    "heading": "Los servicios previstos",
+    "items": [
+      "Consultas veterinarias básicas.",
+      "Esterilización.",
+      "Vacunación y desparasitación.",
+      "Atención a animales rescatados.",
+      "Campañas de tenencia responsable."
+    ],
+    "audience": "Mascotas de las familias afiliadas mediante su carnet familiar, además de los animales rescatados contemplados por la propuesta.",
+    "context": "La clínica formaría parte de los siete programas iniciales del plan, con presupuesto, cobertura y requisitos públicos definidos en su implementación institucional."
+  },
+  {
+    "id": "d",
+    "code": "D",
+    "category": "Salud comunitaria",
+    "title": "Centro de Salud Municipal y Comunitario",
+    "photo": "salud",
+    "alt": "Profesional de salud con bata y estetoscopio",
+    "summary": "Atención primaria y prevención para acompañar el bienestar de las familias afiliadas.",
+    "number": "Prevenir",
+    "unit": "y acompañar la salud",
+    "page": 7,
+    "intro": "La salud se cuida todos los días.",
+    "paragraphs": [
+      "El Centro de Salud Municipal y Comunitario se plantea como un espacio de atención primaria para las personas afiliadas al plan social. Su alcance reúne prevención, control de enfermedades crónicas y orientación médica.",
+      "La propuesta establece que estos servicios se desarrollarían mediante un convenio con las autoridades sanitarias. Esa articulación forma parte del programa: el centro se concibe dentro de un trabajo coordinado para atender a las familias, orientar sus consultas y acompañar el cuidado de su salud en el ámbito de la atención primaria."
+    ],
+    "heading": "Las líneas de atención",
+    "items": [
+      "Atención primaria para las personas afiliadas.",
+      "Prevención y cuidado de la salud.",
+      "Control de enfermedades crónicas.",
+      "Orientación médica.",
+      "Articulación mediante un convenio con las autoridades sanitarias."
+    ],
+    "audience": "Personas afiliadas al Plan Social Familiar, dentro de la cobertura que se establezca para el centro.",
+    "context": "La puesta en marcha está vinculada al convenio sanitario contemplado en el documento y a la definición del presupuesto, los requisitos públicos y los mecanismos de evaluación del programa."
+  },
+  {
+    "id": "e",
+    "code": "E",
+    "category": "Protección familiar",
+    "title": "Subsidios Funerarios",
+    "photo": "proteccion",
+    "alt": "Personas se acompañan abrazadas frente a un paisaje al atardecer",
+    "summary": "Un apoyo para la familia ante la pérdida de uno de sus integrantes.",
+    "number": "A tu lado",
+    "unit": "cuando más se necesita",
+    "page": 9,
+    "intro": "Acompañar también en los momentos difíciles.",
+    "paragraphs": [
+      "Ante el fallecimiento de un integrante de una familia afiliada, el plan propone brindar ayuda mediante exoneraciones o subsidios autorizados de los servicios del cementerio municipal.",
+      "La iniciativa forma parte del eje de apoyo a las familias en los momentos que importan. Su alcance se refiere específicamente a servicios del cementerio municipal y a los mecanismos de exoneración o subsidio autorizados. El apoyo en estos momentos es uno de los siete programas iniciales del Plan Social Familiar."
+    ],
+    "heading": "El apoyo contemplado",
+    "items": [
+      "Ayuda ante la pérdida de un integrante de la familia afiliada.",
+      "Exoneraciones o subsidios autorizados.",
+      "Aplicación a los servicios del cementerio municipal.",
+      "Incorporación al sistema único de inscripción y seguimiento del plan."
+    ],
+    "audience": "Familias afiliadas al plan que atraviesen la pérdida de uno de sus integrantes, según las condiciones que se establezcan para el programa.",
+    "context": "El presupuesto, la cobertura y los requisitos se definirían de forma pública como parte de la institucionalización del programa. "
+  },
+  {
+    "id": "f",
+    "code": "F",
+    "category": "Educación",
+    "title": "Extensión Universitaria y Becas",
+    "photo": "educacion",
+    "alt": "Una persona toma apuntes junto a una computadora portátil",
+    "summary": "Acercar la formación universitaria, técnica y continua a los jóvenes de Durán.",
+    "number": "Aprender",
+    "unit": "para abrir nuevos caminos",
+    "page": 8,
+    "intro": "Que estudiar abra más puertas.",
+    "paragraphs": [
+      "El plan plantea generar convenios con universidades e institutos para acercar gratuitamente a Durán programas académicos, educación continua, formación técnica y vinculación comunitaria. La propuesta parte de conversaciones iniciadas con estas instituciones.",
+      "Las áreas propuestas recogen las carreras solicitadas por jóvenes durante los recorridos en la ciudad. Abarcan tecnología, ingenierías, energías renovables, servicios y actividades creativas. La extensión universitaria y las becas se presentan como una línea de trabajo que depende de los convenios que se concreten; la lista de áreas corresponde a la propuesta académica planteada."
+    ],
+    "heading": "Modalidades de formación",
+    "items": [
+      "Programas académicos mediante convenios con universidades e institutos.",
+      "Educación continua.",
+      "Formación técnica.",
+      "Vinculación comunitaria.",
+      "Extensión universitaria y becas estudiantiles."
+    ],
+    "areas": [
+      [
+        "Tecnología y datos",
+        "Ciberseguridad · Inteligencia artificial y Ciencia de Datos · Desarrollo de Software y Cloud · Ingeniería en Computación e IA · Ingeniería de Software, Sistemas y Ciberseguridad."
+      ],
+      [
+        "Ingeniería y energía",
+        "Energías Renovables y Sistemas Fotovoltaicos · Automatización Industrial y Mecatrónica · Ingeniería Eléctrica y Energías Renovables · Ingeniería Mecatrónica y Automatización · Ingeniería de Minas y Geología."
+      ],
+      [
+        "Servicios y creatividad",
+        "Gastronomía · Marketing · Turismo · Comercio Exterior · Diseño Gráfico y otras áreas."
+      ]
+    ],
+    "audience": "Jóvenes de Durán y personas interesadas en las oportunidades de formación contempladas por los convenios.",
+    "context": "La oferta, la cobertura y los requisitos se articularían con las universidades e institutos participantes y con la implementación institucional del programa."
+  },
+  {
+    "id": "g",
+    "code": "G",
+    "category": "Impulso familiar",
+    "title": "Minicapital semilla familiar",
+    "photo": "capital",
+    "alt": "Una persona escribe sobre documentos en una mesa de trabajo",
+    "summary": "Ayudas económicas para estudiar, emprender o mejorar la vivienda de las familias afiliadas.",
+    "number": "Impulsar",
+    "unit": "el próximo paso de tu familia",
+    "page": 9,
+    "intro": "Un impulso para los proyectos de casa.",
+    "paragraphs": [
+      "El Minicapital semilla familiar propone ayudas económicas para las familias afiliadas que califiquen. El apoyo está previsto para tres destinos: educación superior, desarrollo de emprendimientos y mejoras en la infraestructura de la vivienda.",
+      "Esta línea de apoyo reconoce que los proyectos de una familia pueden tomar caminos distintos: continuar los estudios, desarrollar una actividad productiva o mejorar las condiciones de su hogar. El acceso a las ayudas estará sujeto a la calificación familiar y a los destinos establecidos en la propuesta."
+    ],
+    "heading": "Tres destinos para el apoyo",
+    "items": [
+      "Educación superior.",
+      "Desarrollo de emprendimientos.",
+      "Mejoras en la infraestructura de la vivienda."
+    ],
+    "audience": "Familias afiliadas al plan que cumplan con el proceso de calificación para las ayudas económicas.",
+    "context": "El programa tendría requisitos públicos, presupuesto, cobertura y evaluación. "
+  }
+]

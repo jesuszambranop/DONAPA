@@ -28,3 +28,43 @@ form.addEventListener('submit', e => {
   const link = document.createElement('a'); link.href = url; link.download = 'ficha-familiar-somos-duranduenos.txt'; document.body.append(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
   status.textContent = 'Ficha preparada para descargar. No se han enviado tus datos.';
 });
+
+// Proposal links retain PDF destinations when JavaScript is unavailable.
+let lastProposalTrigger = null;
+function updateDialogScrollLock() {
+  document.body.classList.toggle('modal-open', Boolean(document.querySelector('dialog[open]')));
+}
+function openProposal(id, trigger) {
+  const target = document.getElementById(`propuesta-${id}`);
+  if (!target) return;
+  if (trigger) lastProposalTrigger = trigger;
+  document.querySelectorAll('.proposal-dialog[open]').forEach(open => open.close());
+  target.showModal();
+  target.scrollTop = 0;
+  updateDialogScrollLock();
+}
+document.querySelectorAll('[data-proposal]').forEach(link => {
+  link.addEventListener('click', event => {
+    const target = document.getElementById(`propuesta-${link.dataset.proposal}`);
+    if (!target || typeof target.showModal !== 'function') return;
+    event.preventDefault();
+    openProposal(link.dataset.proposal, link);
+  });
+});
+document.querySelectorAll('.proposal-dialog').forEach(proposal => {
+  proposal.querySelector('.proposal-close').addEventListener('click', () => proposal.close());
+  proposal.addEventListener('close', () => {
+    updateDialogScrollLock();
+    if (!document.querySelector('dialog[open]') && lastProposalTrigger) lastProposalTrigger.focus({preventScroll: true});
+  });
+  proposal.addEventListener('click', event => {
+    const box = proposal.getBoundingClientRect();
+    if (event.target === proposal && (event.clientX < box.left || event.clientX > box.right || event.clientY < box.top || event.clientY > box.bottom)) proposal.close();
+  });
+  proposal.querySelector('[data-next-proposal]').addEventListener('click', event => openProposal(event.currentTarget.dataset.nextProposal));
+  proposal.querySelector('[data-go-family]').addEventListener('click', event => {
+    event.preventDefault();
+    proposal.close();
+    document.getElementById('familias').scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+  });
+});
