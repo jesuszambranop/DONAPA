@@ -33,4 +33,4 @@ El logo Durandueños se preparó a partir del PDF visual aportado, sin la palabr
 
 Las siete propuestas pueden abrirse desde la foto o el enlace de cada tarjeta. Incluyen alcance, servicios, destinatarios, implementación y referencia a la página del plan. Funcionan con diálogo nativo (Escape y foco accesible). Sin JavaScript, los enlaces abren el PDF en la página correspondiente. Los textos completos también están disponibles en `propuestas.json`.
 
-La marca del encabezado y del pie se compone con texto blanco con la tipografía gruesa y cursiva inicial: Rodrigo Aparicio. La fotografía individual se reserva para la portada; la sección de compromiso usa una imagen de colaboración entre personas.
+La marca del encabezado y del pie se compone con texto blanco con la tipografía gruesa y cursiva inicial: Rodrigo Aparicio. La portada muestra una visita a una vecina con una fotografía suministrada por el usuario. El retrato mirando a cámara se conserva en la sección de compromiso. La galería comunitaria reúne las imágenes del ZIP proporcionado, convertidas a WebP sin pérdida y sin regenerar escenas.

@@ -19,3 +19,13 @@ Las fotografías ilustran los temas de las propuestas. No se identifican como be
 - `photos/proteccion.jpg`: https://images.unsplash.com/photo-1511632765486-a01980e01a18
 - `photos/educacion.jpg`: https://images.unsplash.com/photo-1434030216411-0b793f4b4173
 - `photos/capital.jpg`: https://images.unsplash.com/photo-1450101499163-c8848c66ca85
+
+## Fotografías comunitarias proporcionadas por el usuario
+
+Incorporadas desde `iloveimg-compressed.zip`. Se conserva su contenido y se convierten a WebP sin pérdida, sin regenerar personas ni escenas.
+
+- `comunidad/visita-vecina.webp`: Imagen de ChatGPT 11 nov 2026, 16_50_26.png.
+- `comunidad/conversacion-vecinos.webp`: Imagen de ChatGPT 11 nov 2026, 16_50_16.png.
+- `comunidad/encuentro-comunidad.webp`: Imagen de ChatGPT 11 nov 2026, 16_50_23.png.
+- `comunidad/recorrido-comercios.webp`: Imagen de ChatGPT 11 nov 2026, 16_50_24.png.
+- `comunidad/encuentro-jovenes.webp`: Imagen de ChatGPT 11 nov 2026, 16_50_27.png.
