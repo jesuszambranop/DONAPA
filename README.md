@@ -32,3 +32,5 @@ El formulario genera un archivo de texto local. No transmite ni almacena datos e
 El logo Durandueños se preparó a partir del PDF visual aportado, sin la palabra Somos ni el lema. Sus menciones visibles en la web usan la imagen con texto alternativo accesible. Los retratos proceden del plan original; las nuevas fotografías temáticas son de Unsplash. Fuentes y créditos en `assets/RECURSOS.md`. No se han generado fotografías de personas.
 
 Las siete propuestas pueden abrirse desde la foto o el enlace de cada tarjeta. Incluyen alcance, servicios, destinatarios, implementación y referencia a la página del plan. Funcionan con diálogo nativo (Escape y foco accesible). Sin JavaScript, los enlaces abren el PDF en la página correspondiente. Los textos completos también están disponibles en `propuestas.json`.
+
+La marca del encabezado y del pie se compone con texto blanco: Rodrigo Aparicio. La fotografía individual se reserva para la portada; la sección de compromiso usa una imagen de colaboración entre personas.
