@@ -64,7 +64,11 @@ document.querySelectorAll('.proposal-dialog').forEach(proposal => {
   proposal.querySelector('[data-next-proposal]').addEventListener('click', event => openProposal(event.currentTarget.dataset.nextProposal));
   proposal.querySelector('[data-go-family]').addEventListener('click', event => {
     event.preventDefault();
+    lastProposalTrigger = null;
     proposal.close();
-    document.getElementById('familias').scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
+    const families = document.getElementById('familias');
+    families.tabIndex = -1;
+    families.focus({preventScroll: true});
+    families.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
   });
 });
