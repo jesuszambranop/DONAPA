@@ -1,8 +1,8 @@
 'use strict';
 const menuButton = document.querySelector('.menu-button');
 const navigation = document.querySelector('#navigation');
-function closeMenu() { navigation.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); menuButton.setAttribute('aria-label', 'Abrir menú'); }
-menuButton.addEventListener('click', () => { const open = navigation.classList.toggle('open'); menuButton.setAttribute('aria-expanded', String(open)); menuButton.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú'); });
+function closeMenu() { navigation.classList.remove('open'); menuButton.setAttribute('aria-expanded', 'false'); menuButton.setAttribute('aria-label', document.documentElement.lang === 'en' ? 'Open menu' : 'Abrir menú'); }
+menuButton.addEventListener('click', () => { const open = navigation.classList.toggle('open'); menuButton.setAttribute('aria-expanded', String(open)); menuButton.setAttribute('aria-label', document.documentElement.lang === 'en' ? (open ? 'Close menu' : 'Open menu') : (open ? 'Cerrar menú' : 'Abrir menú')); });
 navigation.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMenu(); });
 if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
@@ -10,23 +10,17 @@ if ('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-mot
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
   document.documentElement.classList.add('js');
 }
-const dialog = document.querySelector('#family-dialog');
+const isEnglish = document.documentElement.lang === 'en';
 const form = document.querySelector('#family-form');
 const status = document.querySelector('#form-status');
-document.querySelector('#open-form').addEventListener('click', () => { dialog.showModal(); document.body.classList.add('modal-open'); });
-document.querySelector('#close-form').addEventListener('click', () => dialog.close());
-dialog.addEventListener('close', () => document.body.classList.remove('modal-open'));
-dialog.addEventListener('click', e => { const r = dialog.getBoundingClientRect(); if (e.target === dialog && (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom)) dialog.close(); });
-form.addEventListener('reset', () => { status.textContent = ''; });
-form.addEventListener('submit', e => {
-  e.preventDefault();
-  if (!form.reportValidity()) return;
-  const values = Object.fromEntries(new FormData(form));
-  const labels = {representante:'Jefe o jefa de hogar',telefono:'Teléfono / WhatsApp',cedula:'Cédula',distrito:'Distrito',familia:'Familia',sector:'Barrio, ciudadela o sector',menores12:'Menores de 12 años',adolescentes:'Integrantes de 13 a 17 años',adultos:'Mayores de edad',brigadista:'Brigadista y equipo',observaciones:'Observaciones'};
-  const content = 'PLAN SOCIAL FAMILIAR SOMOS DURANDUEÑOS\nFICHA FAMILIAR · DURÁN 2027–2031\n\n' + Object.entries(values).map(([key,value]) => `${labels[key]}: ${value || '—'}`).join('\n') + '\n\nFicha preparada por la familia. No constituye inscripción oficial, calificación ni carnetización. No se han enviado datos a ningún servidor.\n';
-  const url = URL.createObjectURL(new Blob(['\uFEFF', content], {type:'text/plain;charset=utf-8'}));
-  const link = document.createElement('a'); link.href = url; link.download = 'ficha-familiar-somos-duranduenos.txt'; document.body.append(link); link.click(); link.remove(); setTimeout(() => URL.revokeObjectURL(url), 1000);
-  status.textContent = 'Ficha preparada para descargar. No se han enviado tus datos.';
+form.addEventListener('submit', () => {
+  // Native POST lets Google Forms display the actual outcome; do not claim success locally.
+  status.textContent = isEnglish
+    ? 'Check the new Google Forms tab for the result of your submission.'
+    : 'Consulta el resultado del envío en la nueva pestaña de Google Forms.';
+});
+document.querySelectorAll('.language-switch a').forEach(link => {
+  link.addEventListener('click', () => { if (location.hash) link.hash = location.hash; });
 });
 
 // Proposal links retain PDF destinations when JavaScript is unavailable.
@@ -66,7 +60,7 @@ document.querySelectorAll('.proposal-dialog').forEach(proposal => {
     event.preventDefault();
     lastProposalTrigger = null;
     proposal.close();
-    const families = document.getElementById('familias');
+    const families = document.getElementById('registro');
     families.tabIndex = -1;
     families.focus({preventScroll: true});
     families.scrollIntoView({behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'});
