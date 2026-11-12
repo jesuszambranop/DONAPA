@@ -1,0 +1,30 @@
+DONAPA - INSTALACION EN CPANEL
+
+1. En cPanel abre Administrador de archivos y la carpeta public_html del dominio.
+   En un dominio adicional, usa su carpeta raiz indicada en la seccion Dominios.
+2. Sube DONAPA-cPanel.zip y pulsa Extraer dentro de esa carpeta.
+   El ZIP incluye index.html directamente en su raiz, sin carpeta intermedia.
+3. En Configuracion del Administrador de archivos activa Mostrar archivos ocultos
+   y comprueba que .htaccess esta junto a index.html.
+4. Comprueba en SSL/TLS Status que el dominio tenga un certificado activo
+   (AutoSSL). .htaccess redirige las visitas HTTP a HTTPS y permite la validacion
+   de certificados en /.well-known/.
+5. Abre el dominio. El selector ES/EN, las propuestas y el registro funcionan
+   sin instalar Node, PHP, WordPress ni bases de datos.
+
+Las paginas y los recursos usan rutas relativas y no dependen del dominio de
+GitHub Pages. El formulario envia a tu Google Forms; sus respuestas siguen en
+la cuenta y hoja que ya configuraste. La confirmacion real del envio se muestra
+en Google Forms en otra pestana.
+
+Para confirmar la instalacion comprueba ambas paginas (index.html y en.html),
+las imagenes, el favicon y un registro real en tu hoja de respuestas.
+
+El archivo VERSION.txt identifica el commit desde el que se genero este ZIP.
+El ZIP no incluye Git, credenciales, carpetas de trabajo ni herramientas de
+empaquetado. Las instrucciones y VERSION.txt estan bloqueadas para acceso web
+por .htaccess, pero se pueden leer en el Administrador de archivos.
+
+Si ya hay otro sitio en esa carpeta, conserva una copia de sus archivos y de
+su .htaccess antes de reemplazarlos. El paquete esta preparado para la raiz
+del dominio y para Apache 2.4 o LiteSpeed con compatibilidad .htaccess.

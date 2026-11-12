@@ -38,3 +38,19 @@ Los perfiles de Rodrigo Aparicio y Fundación Aparicio Pérez están enlazados c
 Los encabezados priorizan Gotham Black si está instalada y usan Montserrat 900 como alternativa. Montserrat se distribuye localmente con licencia OFL; los archivos con licencia de Gotham se pueden aportar para su distribución web.
 
 La marca Rodrigo Aparicio conserva las letras blancas, gruesas y cursivas del inicio, sin «Don» ni rayas. La marca Durandueños se preparó a partir del PDF visual aportado. Los retratos proceden del plan original y las fotografías comunitarias del ZIP proporcionado por el usuario. Las imágenes temáticas de programas proceden de Unsplash. Fuentes y créditos en `assets/RECURSOS.md`.
+
+## Favicon A y distribución para cPanel
+
+El favicon usa una A de Aparicio con el acabado turquesa y azul de la marca. Se incluyen ICO con varias resoluciones, PNG de 16 y 32 píxeles, icono Apple de 180 píxeles y recursos de 192 y 512 píxeles en `site.webmanifest`. El original de alta resolución está en `assets/icons/aparicio-a-master.png`.
+
+`.htaccess` prepara el sitio estático para Apache 2.4 / LiteSpeed: índice español, UTF-8, redirección HTTPS compatible con proxy, acceso de AutoSSL a `/.well-known/`, desactivación de listados y MultiViews, tipos MIME, caché, compresión y página 404. Las páginas HTML se revalidan para que se vean las actualizaciones. Los módulos opcionales están protegidos con `IfModule`.
+
+Para preparar el paquete desde un estado de Git ya confirmado:
+
+```sh
+python3 tools/package-cpanel.py
+```
+
+El resultado se guarda en `downloads/DONAPA-cPanel.zip`. Incluye `.htaccess` y los archivos públicos en la raíz del ZIP, con permisos de archivo 0644 y carpetas 0755, sin Git, credenciales, herramientas ni carpeta envolvente. `VERSION.txt` identifica el commit de origen. Las instrucciones están en `LEEME-CPANEL.txt`.
+
+Se extrae directamente en `public_html` o en la raíz del dominio adicional. El dominio debe tener un certificado SSL activo (AutoSSL). Las rutas de idioma y recursos son relativas, de modo que no quedan ligadas a GitHub Pages. El registro continúa enviando al Google Forms del propietario.
