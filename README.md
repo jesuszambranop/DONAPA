@@ -54,3 +54,11 @@ python3 tools/package-cpanel.py
 El resultado se guarda en `downloads/DONAPA-cPanel.zip`. Incluye `.htaccess` y los archivos públicos en la raíz del ZIP, con permisos de archivo 0644 y carpetas 0755, sin Git, credenciales, herramientas ni carpeta envolvente. `VERSION.txt` identifica el commit de origen. Las instrucciones están en `LEEME-CPANEL.txt`.
 
 Se extrae directamente en `public_html` o en la raíz del dominio adicional. El dominio debe tener un certificado SSL activo (AutoSSL). Las rutas de idioma y recursos son relativas, de modo que no quedan ligadas a GitHub Pages. El registro continúa enviando al Google Forms del propietario.
+
+## Actualizaciones de caché en cPanel
+
+Todas las respuestas del sitio usan `Cache-Control: no-cache, max-age=0, must-revalidate`; `mod_expires` queda desactivado para evitar caducidades heredadas. El navegador debe consultar al servidor antes de reutilizar los archivos y puede recibir 304 para conservar las copias que no cambiaron. Esto abarca HTML, CSS, JavaScript, imágenes, iconos, fuentes y documentos. Se conservan Last-Modified y ETag para no descargar nuevamente los archivos sin cambios.
+
+Una migración inicial de las URL de recursos evita reutilizar las direcciones que tenían la política anterior de 7 o 30 días. Las siguientes modificaciones no requieren cambiar manualmente esos identificadores: la actualización se controla por las cabeceras del servidor.
+
+Para activar esta política en el dominio de cPanel es necesario desplegar los archivos actualizados, incluido `.htaccess`, o extraer el ZIP actualizado. Los commits de GitHub no modifican por sí solos la copia subida a cPanel. GitHub Pages administra sus propias cabeceras y no ejecuta `.htaccess`. Esta política controla archivos HTTP; la resolución DNS y la página provisional del proveedor se gestionan fuera del sitio.

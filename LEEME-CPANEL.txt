@@ -28,3 +28,9 @@ por .htaccess, pero se pueden leer en el Administrador de archivos.
 Si ya hay otro sitio en esa carpeta, conserva una copia de sus archivos y de
 su .htaccess antes de reemplazarlos. El paquete esta preparado para la raiz
 del dominio y para Apache 2.4 o LiteSpeed con compatibilidad .htaccess.
+
+ACTUALIZACIONES
+El paquete aplica revalidacion HTTP en cada visita para todos los archivos.
+Despues de subir modificaciones, el navegador consulta al servidor y reutiliza
+las copias que no cambiaron. Reemplaza tambien .htaccess cuando actualices
+este paquete. La politica de cache de archivos no modifica los DNS del dominio.
